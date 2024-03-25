@@ -17,137 +17,87 @@
         <link rel="stylesheet" href="assets/libs/icofont/icofont.min.css">
         <link href="assets/libs/flatpickr/flatpickr.min.css" type="text/css" rel="stylesheet">
         <link rel="stylesheet" href="assets/css/tailwind.min.css">
+      <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
 
+.container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+      </style>
+        <body>
+
+            <div class="container">
+                <form>
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="address">Address:</label>
+                        <input type="text" id="address" name="address">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="date">Date:</label>
+                        <input type="date" id="date" name="date">
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+            </div>
+            
+            </body>
     </head>
     
-    <body data-layout-mode="light"  data-sidebar-size="default" data-theme-layout="vertical" class="bg-[#EEF0FC] dark:bg-gray-900">
-    
-      <div class="grid md:grid-cols-12 lg:grid-cols-12 xl:grid-cols-12 gap-4">
-        <div class="col-span-12 md:col-span-12 lg:col-span-12 xl:col-span-12">
-            <div class="bg-white dark:bg-slate-800 shadow  rounded-md w-full relative">
-                <div class="border-b border-dashed border-slate-200 dark:border-slate-700 py-3 px-4 dark:text-slate-300/70">
-                    <h4 class="font-medium">Personal Information</h4>
-                </div><!--end card-header-->
-                <div class="flex-auto p-4">
-                    <form> 
-                        <div class="grid md:grid-cols-12 lg:grid-cols-12">
-                            <div class="col-span-12 md:col-span-12 lg:col-span-3 self-center text-right mr-2">
-                                <label for="First_Name" class="font-medium text-sm text-slate-600 dark:text-slate-400">First Name</label>
-                            </div><!--end col-->
-                            <div class="col-span-12 md:col-span-12 lg:col-span-9 mb-2">
-                                <input type="text" id="First_Name" class="form-input w-full rounded-md mt-1 border border-slate-300/60 dark:border-slate-700 dark:text-slate-300 bg-transparent px-3 py-1 focus:outline-none focus:ring-0 placeholder:text-slate-400/70 placeholder:font-normal placeholder:text-sm hover:border-slate-400 focus:border-primary-500 dark:focus:border-primary-500  dark:hover:border-slate-700" value="Rosa" placeholder="First name" required>
-                            </div><!--end col-->
-                            <div class="col-span-12 md:col-span-12 lg:col-span-3 self-center text-right mr-2">
-                                <label for="Last_Name" class="font-medium text-sm text-slate-600 dark:text-slate-400">Last Name</label>
-                            </div><!--end col-->
-                            <div class="col-span-12 md:col-span-12 lg:col-span-9  mb-2">
-                                <input type="text" id="Last_Name" class="form-input w-full rounded-md mt-1 border border-slate-300/60 dark:border-slate-700 dark:text-slate-300 bg-transparent px-3 py-1 focus:outline-none focus:ring-0 placeholder:text-slate-400/70 placeholder:font-normal placeholder:text-sm hover:border-slate-400 focus:border-primary-500 dark:focus:border-primary-500  dark:hover:border-slate-700" value="Dodson" placeholder="Last name" required>
-                            </div><!--end col-->
-                            <div class="col-span-12 md:col-span-12 lg:col-span-3 self-center text-right mr-2">
-                                <label for="Company_Name" class="font-medium text-sm text-slate-600 dark:text-slate-400">Company Name</label>
-                            </div><!--end col-->
-                            <div class="col-span-12 md:col-span-12 lg:col-span-9  mb-2">
-                                <input type="text" id="Company_Name" class="form-input w-full rounded-md mt-1 border border-slate-300/60 dark:border-slate-700 dark:text-slate-300 bg-transparent px-3 py-1 focus:outline-none focus:ring-0 placeholder:text-slate-400/70 placeholder:font-normal placeholder:text-sm hover:border-slate-400 focus:border-primary-500 dark:focus:border-primary-500  dark:hover:border-slate-700" value="Example Themes" placeholder="Last name" required>
-                            </div><!--end col-->
-                            <div class="col-span-12 md:col-span-12 lg:col-span-3 self-center text-right mr-2">
-                                <label for="Contact_Phone" class="font-medium text-sm text-slate-600 dark:text-slate-400">Contact Phone</label>
-                            </div><!--end col-->
-                            <div class="col-span-12 md:col-span-12 lg:col-span-9  mb-2">
-                                <input type="text" id="Contact_Phone" class="form-input w-full rounded-md mt-1 border border-slate-300/60 dark:border-slate-700 dark:text-slate-300 bg-transparent px-3 py-1 focus:outline-none focus:ring-0 placeholder:text-slate-400/70 placeholder:font-normal placeholder:text-sm hover:border-slate-400 focus:border-primary-500 dark:focus:border-primary-500  dark:hover:border-slate-700" value="+1 23456 7890" placeholder="Last name" required>
-                            </div><!--end col-->
-                            <div class="col-span-12 md:col-span-12 lg:col-span-3 self-center text-right mr-2">
-                                <label for="Your_Email" class="font-medium text-sm text-slate-600 dark:text-slate-400">Your email</label>
-                            </div><!--end col-->
-                            <div class="col-span-12 md:col-span-12 lg:col-span-9  mb-2">
-                                <input type="email" id="Your_Email" class="form-input w-full rounded-md mt-1 border border-slate-300/60 dark:border-slate-700 dark:text-slate-300 bg-transparent px-3 py-1 focus:outline-none focus:ring-0 placeholder:text-slate-400/70 placeholder:font-normal placeholder:text-sm hover:border-slate-400 focus:border-primary-500 dark:focus:border-primary-500  dark:hover:border-slate-700" value="example@example.com" placeholder="Last name" required>
-                            </div><!--end col-->
-                            <div class="col-span-12 md:col-span-12 lg:col-span-3 self-center text-right mr-2">
-                                <label for="Contact_Phone" class="font-medium text-sm text-slate-600 dark:text-slate-400">Website Link</label>
-                            </div><!--end col-->
-                            <div class="col-span-12 md:col-span-12 lg:col-span-9  mb-2">
-                                <input type="text" id="Contact_Phone" class="form-input w-full rounded-md mt-1 border border-slate-300/60 dark:border-slate-700 dark:text-slate-300 bg-transparent px-3 py-1 focus:outline-none focus:ring-0 placeholder:text-slate-400/70 placeholder:font-normal placeholder:text-sm hover:border-slate-400 focus:border-primary-500 dark:focus:border-primary-500  dark:hover:border-slate-700" value="https://mannatthemes.com/" placeholder="Last name" required>
-                            </div><!--end col-->
-                            <div class="col-span-12 md:col-span-12 lg:col-span-3 self-center text-right mr-2">
-                                <label for="countries" class="font-medium text-sm text-slate-600 dark:text-slate-400">Countries</label>
-                            </div><!--end col-->
-                            <div class="col-span-12 md:col-span-12 lg:col-span-9  mb-2">
-                                <select id="countries" class=" w-full rounded-md mt-1 border border-slate-300/60 dark:border-slate-700 dark:text-slate-300 bg-transparent px-3 py-[6.5px] focus:outline-none focus:ring-0 placeholder:text-slate-400/70 placeholder:font-normal placeholder:text-sm hover:border-slate-400 focus:border-primary-500 dark:focus:border-primary-500  dark:hover:border-slate-700">
-                                    <option>United States</option>
-                                    <option>Canada</option>
-                                    <option>France</option>
-                                    <option>Germany</option>
-                                </select>
-                            </div><!--end col-->
-                            <div class=" col-start-4 col-end-13  mb-2">
-                                <button type="submit" class="inline-block focus:outline-none text-primary-500 hover:bg-primary-500 hover:text-white bg-transparent border border-gray-200 dark:bg-transparent dark:text-primary-500 dark:hover:text-white dark:border-gray-700 dark:hover:bg-primary-500  text-sm font-medium py-1 px-3 rounded">Submit</button>
-                                <button type="submit" class="inline-block focus:outline-none text-red-500 hover:bg-red-500 hover:text-white bg-transparent border border-gray-200 dark:bg-transparent dark:text-red-500 dark:hover:text-white dark:border-gray-700 dark:hover:bg-red-500  text-sm font-medium py-1 px-3 rounded">Cancel</button>
-                            </div><!--end col-->
-                        </div><!--end grid-->
-                    </form>
-                </div><!--end card-body-->
-            </div> <!--end card-->
-        </div><!--end col-->
-        <div class="col-span-12 md:col-span-12 lg:col-span-12 xl:col-span-12">
-            <div class="bg-white dark:bg-slate-800 shadow  rounded-md w-full relative">    
-                <div class="border-b border-dashed border-slate-200 dark:border-slate-700 py-3 px-4 dark:text-slate-300/70">
-                    <h4 class="font-medium">Change Password</h4>
-                </div><!--end card-header-->                
-                <div class="flex-auto p-4"> 
-                    <form> 
-                        <div class="grid md:grid-cols-12 lg:grid-cols-12">
-                            <div class="col-span-12 md:col-span-12 lg:col-span-3 self-center text-right mr-2">
-                                <label for="Current_Password" class="font-medium text-sm text-slate-600 dark:text-slate-400">Current Password</label>
-                            </div><!--end col-->
-                            <div class="col-span-12 md:col-span-12 lg:col-span-9 mb-2">
-                                <input type="password" id="Current_Password" class="form-input w-full rounded-md mt-1 border border-slate-300/60 dark:border-slate-700 dark:text-slate-300 bg-transparent px-3 py-1 focus:outline-none focus:ring-0 placeholder:text-slate-400/70 placeholder:font-normal placeholder:text-sm hover:border-slate-400 focus:border-primary-500 dark:focus:border-primary-500  dark:hover:border-slate-700"  placeholder="Current Password" required>
-                            </div><!--end col-->
-                            <div class="col-span-12 md:col-span-12 lg:col-span-3 self-center text-right mr-2">
-                                <label for="New_Password" class="font-medium text-sm text-slate-600 dark:text-slate-400">New Password</label>
-                            </div><!--end col-->
-                            <div class="col-span-12 md:col-span-12 lg:col-span-9  mb-2">
-                                <input type="password" id="New_Password" class="form-input w-full rounded-md mt-1 border border-slate-300/60 dark:border-slate-700 dark:text-slate-300 bg-transparent px-3 py-1 focus:outline-none focus:ring-0 placeholder:text-slate-400/70 placeholder:font-normal placeholder:text-sm hover:border-slate-400 focus:border-primary-500 dark:focus:border-primary-500  dark:hover:border-slate-700"  placeholder="New Password" required>
-                            </div><!--end col-->
-                            <div class="col-span-12 md:col-span-12 lg:col-span-3 self-center text-right mr-2">
-                                <label for="Confirm_Password" class="font-medium text-sm text-slate-600 dark:text-slate-400">Confirm Password</label>
-                            </div><!--end col-->
-                            <div class="col-span-12 md:col-span-12 lg:col-span-9  mb-2">
-                                <input type="password" id="Confirm_Password" class="form-input w-full rounded-md mt-1 border border-slate-300/60 dark:border-slate-700 dark:text-slate-300 bg-transparent px-3 py-1 focus:outline-none focus:ring-0 placeholder:text-slate-400/70 placeholder:font-normal placeholder:text-sm hover:border-slate-400 focus:border-primary-500 dark:focus:border-primary-500  dark:hover:border-slate-700" placeholder="Confirm Password" required>
-                            </div><!--end col-->                                                        
-                            <div class=" col-start-4 col-end-13  mb-2">
-                                <button type="submit" class="inline-block focus:outline-none text-primary-500 hover:bg-primary-500 hover:text-white bg-transparent border border-gray-200 dark:bg-transparent dark:text-primary-500 dark:hover:text-white dark:border-gray-700 dark:hover:bg-primary-500  text-sm font-medium py-1 px-3 rounded">Chang Password</button>
-                                <button type="submit" class="inline-block focus:outline-none text-red-500 hover:bg-red-500 hover:text-white bg-transparent border border-gray-200 dark:bg-transparent dark:text-red-500 dark:hover:text-white dark:border-gray-700 dark:hover:bg-red-500  text-sm font-medium py-1 px-3 rounded">Cancel</button>
-                            </div><!--end col-->
-                        </div><!--end grid-->
-                    </form> 
-                </div><!--end card-body-->
-            </div> <!--end card-->
-            <div class="bg-white dark:bg-slate-800 shadow  rounded-md w-full relative mt-4">    
-                <div class="border-b border-dashed border-slate-200 dark:border-slate-700 py-3 px-4 dark:text-slate-300/70">
-                    <h4 class="font-medium">Other Settings</h4>
-                </div><!--end card-header-->                
-                <div class="flex-auto p-4"> 
-                    <form> 
-                        <label class="custom-label block mb-2 dark:text-slate-300">
-                            <div class="bg-white border border-slate-200 rounded w-4 h-4  inline-block leading-4 text-center -mb-[3px]">
-                              <input type="checkbox" class="hidden">
-                              <i class="fas fa-check hidden text-xs text-slate-700 "></i>
-                            </div>
-                            Email Notifications <span class="text-slate-400">Do you need them?</span>
-                        </label>
-                        <label class="custom-label block dark:text-slate-300">
-                            <div class="bg-white border border-slate-200 rounded w-4 h-4  inline-block leading-4 text-center -mb-[3px]">
-                              <input type="checkbox" class="hidden">
-                              <i class="fas fa-check hidden text-xs text-slate-700"></i>
-                            </div>
-                            API Access <span class="text-slate-400">Enable/Disable access</span> 
-                        </label>
-                    </form> 
-                </div><!--end card-body-->
-            </div> <!--end card-->
-        </div><!--end col-->                                    
-    </div><!--end grid-->
-</div>
-
+   
         <!-- JAVASCRIPTS -->
         <!-- <div class="menu-overlay"></div> -->
         <script src="assets/libs/lucide/umd/lucide.min.js"></script>
